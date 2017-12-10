@@ -15,13 +15,13 @@
 
 $(call inherit-product, device/yu/lettuce/full_lettuce.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
+# Inherit some common Cosmic-OS stuff.
+$(call inherit-product, vendor/cos/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_lettuce
+PRODUCT_NAME := cos_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 
